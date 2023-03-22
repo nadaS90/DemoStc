@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="248.348" tests="3" skipped="0" failures="2" errors="0">
+<testcase classname="User could navigate to the website and review plans" name="User should choose Saudi Arabia and discover all plans" time="82.105">
+<system-out><![CDATA[
+Given User navigate to the website..........................................passed
+When User Select Saudi Arabia as a country..................................passed
+Then User finds plan types..................................................passed
+And The plan price and currency will change to SAR..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could navigate to the website and review plans" name="User should choose Kuwait and discover all plans" time="84.166">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at org.example.stepDef.SubscribeStepDef.the_plan_price_and_currency_will_change_to_kwd(SubscribeStepDef.java:62)
+	at ✽.The plan price and currency will change to KWD(file:///C:/Users/Nada.Marghany/Downloads/DemoStc/DemoStc/src/main/features/TvPlanSubscription.feature:15)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User navigate to the website..........................................passed
+When User Select Kuwait as a country........................................passed
+Then User finds plan types..................................................passed
+And The plan price and currency will change to KWD..........................failed
+]]></system-out>
+</testcase>
+<testcase classname="User could navigate to the website and review plans" name="User should choose Bahrain and discover all plans" time="81.697">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at org.example.stepDef.SubscribeStepDef.the_plan_price_and_currency_will_change_to_bhd(SubscribeStepDef.java:78)
+	at ✽.The plan price and currency will change to BHD(file:///C:/Users/Nada.Marghany/Downloads/DemoStc/DemoStc/src/main/features/TvPlanSubscription.feature:23)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User navigate to the website..........................................passed
+When User Select Bahrain as a country.......................................passed
+Then User finds plan types..................................................passed
+And The plan price and currency will change to BHD..........................failed
+]]></system-out>
+</testcase>
+</testsuite>
