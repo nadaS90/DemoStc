@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e2866cf-698c-47c7-abe5-b11b37696c8b" name="Changes" comment="Kuwait validation">
+    <list default="true" id="8e2866cf-698c-47c7-abe5-b11b37696c8b" name="Changes" comment="Bahrain validation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/features/TvPlanSubscription.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/features/TvPlanSubscription.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/SubscribePlanPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/SubscribePlanPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDef/SubscribeStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDef/SubscribeStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDef/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDef/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testRunner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testRunner/TestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +51,7 @@
       <recent name="C:\Users\Nada.Marghany\Downloads\DemoStc\DemoStc\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: User should choose Bahrain and discover all plans">
+  <component name="RunManager" selected="JUnit.TestRunner">
     <configuration name="Feature: TvPlanSubscription" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/features/TvPlanSubscription.feature" />
@@ -132,12 +131,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DemoStc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.testRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.testRunner" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testRunner.TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="Cucumber Java.Scenario: User should choose Bahrain and discover all plans" />
+        <item itemvalue="Cucumber Java.Scenario: User should choose Saudi Arabia and discover all plans" />
         <item itemvalue="Cucumber Java.Feature: TvPlanSubscription" />
         <item itemvalue="Cucumber Java.Scenario: User should choose Kuwait and discover all plans" />
-        <item itemvalue="Cucumber Java.Scenario: User should choose Saudi Arabia and discover all plans" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +164,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679447172807</updated>
-      <workItem from="1679447174513" duration="9333000" />
+      <workItem from="1679447174513" duration="10981000" />
     </task>
     <task id="LOCAL-00001" summary="KSA validation">
       <created>1679454740292</created>
@@ -165,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679455665865</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Bahrain validation">
+      <created>1679456717654</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679456717654</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +207,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="KSA validation" />
     <MESSAGE value="Kuwait validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kuwait validation" />
+    <MESSAGE value="Bahrain validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bahrain validation" />
   </component>
 </project>

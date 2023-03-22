@@ -4,6 +4,9 @@ import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import utilities.Helper;
 
 import java.util.concurrent.TimeUnit;
 
@@ -21,7 +24,7 @@ public class Hooks {
         driver = new ChromeDriver(newOptions);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.navigate().to("https://subscribe.stctv.com/bh-en");
+        driver.navigate().to("https://subscribe.stctv.com/sa-en");
     }
 
     @After()
@@ -29,5 +32,14 @@ public class Hooks {
         driver.quit();
     }
 
-
+@AfterMethod
+    public static void TakeScreenshotOnFailure(ITestResult result)
+{
+    if (result.getStatus() == ITestResult.FAILURE)
+    {
+        System.out.println("We have Failed TC");
+        System.out.println("We Took screenshot");
+        Helper.failureScreenSoot(driver,result.getName());
+    }
+}
 }
