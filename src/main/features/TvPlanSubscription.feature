@@ -13,3 +13,11 @@ Feature: User could navigate to the website and review plans
     When User Select Kuwait as a country
     Then User finds plan types
     And The plan price and currency will change to KWD
+
+
+  @test
+  Scenario: User should choose Bahrain and discover all plans
+    Given User navigate to the website
+    When User Select Bahrain as a country
+    Then User finds plan types
+    And The plan price and currency will change to BHD

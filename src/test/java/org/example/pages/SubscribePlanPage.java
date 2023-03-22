@@ -18,7 +18,7 @@ public class SubscribePlanPage extends BasePage {
     public final String CountrySelectID = "//*[@id='country-selct']";
     public final String KSACountryID = "//a[@id='sa']";
     public final String KWDCountryID = "//a[@id='kw']";
-    public final String BahrainCountryID = "//a[@id='sa']";
+    public final String BahrainCountryID = "//a[@id='bh']";
 
     public final String LitePlanID =  "//strong[@id='name-lite']";
     public final String ClassicPlanID =  "//strong[@id='name-classic']";
@@ -34,6 +34,7 @@ public class SubscribePlanPage extends BasePage {
     public WebElement CountrySelect = driver.findElement(By.xpath(CountrySelectID));
     public WebElement KSACountry = driver.findElement(By.xpath(KSACountryID));
     public WebElement KuwaitCountry = driver.findElement(By.xpath(KWDCountryID));
+    public WebElement BahrainCountry = driver.findElement(By.xpath(BahrainCountryID));
 
     public WebElement LitePlan = driver.findElement(By.xpath(LitePlanID));
     public WebElement ClassicPlan = driver.findElement(By.xpath(ClassicPlanID));
@@ -82,6 +83,10 @@ public class SubscribePlanPage extends BasePage {
         ClickBtn(KuwaitCountry);
     }
 
+    public void UserClickOnCountrySelectionBtn(WebElement country)
+    {
+        ClickBtn(country);
+    }
 
 
 }

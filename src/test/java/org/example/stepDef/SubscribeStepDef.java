@@ -27,8 +27,7 @@ public class SubscribeStepDef
     {
         _planObject.UserClickOnCountryBtn();
         _planObject.DoesCountrySelectDisplayed();
-        _planObject.UserClickOnKSABtn();
-  //      Hooks.driver.navigate().to("https://subscribe.stctv.com/sa-en");
+        _planObject.UserClickOnCountrySelectionBtn(_planObject.KSACountry);
         Hooks.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
     @Then("User finds plan types")
@@ -43,8 +42,6 @@ public class SubscribeStepDef
     public void the_plan_price_and_currency_will_change_to_sar()
     {
         Assert.assertTrue(_planObject.PlanPrices.contains(Constants.KSACurrency));
-        Assert.assertTrue(_planObject.PlanPrices.contains(Constants.KSACurrency));
-        Assert.assertTrue(_planObject.PlanPrices.contains(Constants.KSACurrency));
 
         Assert.assertTrue(_planObject.PlanPrices.contains(Constants.KSALitePrice));
         Assert.assertTrue(_planObject.PlanPrices.contains(Constants.KSAClassicPrice));
@@ -56,20 +53,33 @@ public class SubscribeStepDef
     {
         _planObject.UserClickOnCountryBtn();
         _planObject.DoesCountrySelectDisplayed();
-       _planObject.UserClickOnKwdBtn();
+        _planObject.UserClickOnCountrySelectionBtn(_planObject.KuwaitCountry);
         Hooks.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
     @Then("The plan price and currency will change to KWD")
     public void the_plan_price_and_currency_will_change_to_kwd()
     {
         Assert.assertTrue(_planObject.PlanPrices.contains(Constants.KuwaitCurrency));
-        Assert.assertTrue(_planObject.PlanPrices.contains(Constants.KuwaitCurrency));
-        Assert.assertTrue(_planObject.PlanPrices.contains(Constants.KuwaitCurrency));
 
         Assert.assertTrue(_planObject.PlanPrices.contains(Constants.KWDLitePrice));
         Assert.assertTrue(_planObject.PlanPrices.contains(Constants.KWDClassicPrice));
         Assert.assertTrue(_planObject.PlanPrices.contains(Constants.KWDPremiumPrice));
-        throw new io.cucumber.java.PendingException();
+    }
+
+    @When("User Select Bahrain as a country")
+    public void user_select_bahrain_as_a_country() {
+        _planObject.UserClickOnCountryBtn();
+        _planObject.DoesCountrySelectDisplayed();
+        _planObject.UserClickOnCountrySelectionBtn(_planObject.BahrainCountry);
+        Hooks.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    }
+    @Then("The plan price and currency will change to BHD")
+    public void the_plan_price_and_currency_will_change_to_bhd() {
+        Assert.assertTrue(_planObject.PlanPrices.contains(Constants.BahrainCurrency));
+
+        Assert.assertTrue(_planObject.PlanPrices.contains(Constants.BHLitePrice));
+        Assert.assertTrue(_planObject.PlanPrices.contains(Constants.BHClassicPrice));
+        Assert.assertTrue(_planObject.PlanPrices.contains(Constants.BHPremiumPrice));
     }
 
 
