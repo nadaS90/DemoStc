@@ -49,8 +49,29 @@ public class SubscribeStepDef
         Assert.assertTrue(_planObject.PlanPrices.contains(Constants.KSALitePrice));
         Assert.assertTrue(_planObject.PlanPrices.contains(Constants.KSAClassicPrice));
         Assert.assertTrue(_planObject.PlanPrices.contains(Constants.KSAPremiumPrice));
-
     }
+
+    @When("User Select Kuwait as a country")
+    public void user_select_kuwait_as_a_country()
+    {
+        _planObject.UserClickOnCountryBtn();
+        _planObject.DoesCountrySelectDisplayed();
+       _planObject.UserClickOnKwdBtn();
+        Hooks.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    }
+    @Then("The plan price and currency will change to KWD")
+    public void the_plan_price_and_currency_will_change_to_kwd()
+    {
+        Assert.assertTrue(_planObject.PlanPrices.contains(Constants.KuwaitCurrency));
+        Assert.assertTrue(_planObject.PlanPrices.contains(Constants.KuwaitCurrency));
+        Assert.assertTrue(_planObject.PlanPrices.contains(Constants.KuwaitCurrency));
+
+        Assert.assertTrue(_planObject.PlanPrices.contains(Constants.KWDLitePrice));
+        Assert.assertTrue(_planObject.PlanPrices.contains(Constants.KWDClassicPrice));
+        Assert.assertTrue(_planObject.PlanPrices.contains(Constants.KWDPremiumPrice));
+        throw new io.cucumber.java.PendingException();
+    }
+
 
 
 }

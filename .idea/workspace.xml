@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e2866cf-698c-47c7-abe5-b11b37696c8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/testData/Constants.java" afterDir="false" />
+    <list default="true" id="8e2866cf-698c-47c7-abe5-b11b37696c8b" name="Changes" comment="KSA validation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/features/TvPlanSubscription.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/features/TvPlanSubscription.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/SubscribePlanPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/SubscribePlanPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDef/SubscribeStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDef/SubscribeStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testData/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testData/Constants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,7 @@
       <recent name="C:\Users\Nada.Marghany\Downloads\DemoStc\DemoStc\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: User should choose Saudi Arabia and discover all plans">
+  <component name="RunManager" selected="Cucumber Java.Scenario: User should choose Kuwait and discover all plans">
     <configuration name="Feature: TvPlanSubscription" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/features/TvPlanSubscription.feature" />
@@ -61,6 +62,26 @@
       <module name="DemoStc" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: TvPlanSubscription" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: User should choose Kuwait and discover all plans" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/features/TvPlanSubscription.feature" />
+      <option name="GLUE" value="org.example.stepDef" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="DemoStc" />
+      <option name="NAME_FILTER" value="^User should choose Kuwait and discover all plans$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User should choose Kuwait and discover all plans$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User should choose Kuwait and discover all plans" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -94,6 +115,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: User should choose Kuwait and discover all plans" />
         <item itemvalue="Cucumber Java.Scenario: User should choose Saudi Arabia and discover all plans" />
         <item itemvalue="Cucumber Java.Feature: TvPlanSubscription" />
       </list>
@@ -107,8 +129,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679447172807</updated>
-      <workItem from="1679447174513" duration="7533000" />
+      <workItem from="1679447174513" duration="8454000" />
     </task>
+    <task id="LOCAL-00001" summary="KSA validation">
+      <created>1679454740292</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679454740292</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,5 +154,35 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="KSA validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="KSA validation" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/stepDef/SubscribeStepDef.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/stepDef/SubscribeStepDef.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/stepDef/SubscribeStepDef.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/stepDef/SubscribeStepDef.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
